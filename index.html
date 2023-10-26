@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <title>University website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+</head>
+<body>
+
+
+    <style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.headeer{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)rgba(4,9,30,0.7))url(images/banner.png.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #000000;
+
+
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transform: 0.5s;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: #fff;
+
+}
+.hero-btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn :hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+@media(max-width:700px){
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336 ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.couse-col{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.couse-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+} 
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col{
+    width: 100%;
+
+}
+.layer{
+    background: transparent ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer :hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities-col p{
+    padding: 0;
+
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.about{
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26px;
+
+}
+.pra{
+    text-align: center;
+    padding: 40x;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:  gray;
+    color: white;
+    font-size: 20px;
+    margin: 110px;
+    
+
+}
+.contect{
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    margin: 110px;
+
+    
+}
+.footer{
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    background-color: #000000;
+    color: white;
+
+    
+}
+
+.col{
+    transform: scale();
+}
+.col :hover{
+    transition: translate(1rem);
+}
+.card{
+    transform: scale();
+}
+.card{
+    transition: translate(1rem);
+}
+    </style>
+
+
+
+    <section class="headeer">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">HOME</a></li>
+                    
+
+                        
+
+                </ul>
+            </div>
+        </nav >
+
+        <div class="text-box">
+            <h1>WORLD'S BEST UNIVERSITY</h1>
+            <p>
+                making website is now one of the easiast thing in the world. you just nee to learn HTML, css <br>
+                JAVASCIPT and you are good to go.
+            </p>
+            <a href="" class="hero-btn">Vist Us To More</a>
+
+        </div>
+    </section>
+    <section class="course">
+        <h1>COURSES WE OFFER</h1>
+        <p>lorem  ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="couse-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aliquam nihil cum unde veniam maxime praesentium quisquam 
+                    voluptatum accusamus 
+                    repudiandae nostrum, molestiae earum in provident quas quo 
+                    tempora saepe aspernatur reiciendis.</p>
+            </div>
+            <div class="couse-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolore, 
+                    neque placeat nulla autem labore voluptatibus similique illum iste facilis corrupti
+                     temporibus, nihil laudantium ullam deleniti 
+                     quibusdam blanditiis ea reiciendis!</p>
+            </div>
+            <div class="couse-col">
+                <h3>Post Graguate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolore, 
+                    neque placeat nulla autem labore voluptatibus similique illum iste facilis corrupti
+                    temporibus, nihil laudantium ullam deleniti 
+                    quibusdam blanditiis ea reiciendis!</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="campus">
+        <h1>OUR GLOBAL CAMPUS</h1>
+        <p>lorem ipsum dolor sit amet, consetetur addipiscing  eedit.</p>
+
+        </sectioin>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/library.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">library</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/basketball.png.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">basketball</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/cafeteria.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">cafeteria</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <h2 class="about">About</h2>
+    <p class="pra">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Praesentium nisi aperiam ipsa! Aut, culpa. Aut vel 
+         ad accusantium natus esse optio omnis exercitationem 
+         iusto eaque, perferendis atque necessitatibus quis libero.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+         Nam minus voluptate perferendis. Ducimus, architecto debitis necessitatibus
+         praesentium quaerat quas aut beatae eaque est. Eveniet quisquam autem 
+         adipisci, ducimus recusandae vel!
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci 
+         aperiam corporis quod recusandae cumque, magni 
+         doloribus possimus, ipsum aspernatur a sapiente in voluptatum quasi autem 
+         ratione, facere ipsa voluptatibus.
+    </p>
+
+
+    <h2 class="contect">Contect</h2>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="phone number" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="massage"  aria-label="Last name">
+          </div>
+      </div>
+
+      <br>
+
+      <br>
+      <br>
+
+
+    <footer class="footer">
+        <h2>@ Copy write Claim</h2>
+        <h2>Email</h2>
+    </footer>
+
+
+</body>
+</html>
+        
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function showMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
